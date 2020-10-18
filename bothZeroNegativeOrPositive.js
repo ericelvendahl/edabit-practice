@@ -18,11 +18,11 @@
 // Inputs will always be two numbers.
 
 function bothZeroNegPos(firstNumber, secondNumber) {
-  if (firstNumber && secondNumber < 0) {
+  if (firstNumber < 0 && secondNumber < 0) {
     return true;
-  } else if (firstNumber && secondNumber > 0) {
+  } else if (firstNumber > 0 && secondNumber > 0) {
     return true;
-  } else if (firstNumber && secondNumber === 0) {
+  } else if (firstNumber === 0 && secondNumber === 0) {
     return true;
   } else {
     return false;
@@ -32,3 +32,4 @@ function bothZeroNegPos(firstNumber, secondNumber) {
 console.log(bothZeroNegPos(12, -1));
 console.log(bothZeroNegPos(0, 2));
 console.log(bothZeroNegPos(6, -2));
+console.log(bothZeroNegPos(6, 22));
